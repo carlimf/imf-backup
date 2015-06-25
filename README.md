@@ -10,8 +10,8 @@ Every file is encrypted separately, and in the event of damage to your backup st
 
 Every file is split to 50MB chunks, and every file or chunk is encrypted using a new initialization vector (IV), which provides increased security.
 
-Emergency decryption utility located in decrypter folder. 
-To compile it run "clang++ main.cpp -o decrypter -lcrypto -lssl" command
+Emergency decryption utility located in decrypter folder.
+To compile it run "clang++ main.cpp -o decrypter -lcrypto -lssl" command. Requires libssl-dev.
 
 To decrypt file run ./decrypter "MyPassword" "Input File Path" "Output File Path". 
 
